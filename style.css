@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+.calculator {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;  
+    height: 93vh; 
+}
+
+.row {
+    display: flex;
+    height: 15vh;
+    font-weight: 800;
+    color: bisque;
+    text-align: right;
+    justify-content: space-around;
+}
+
+.screen {
+    max-width: 400px;
+    margin: auto; 
+    height: 15vh; 
+    background-color: rgb(14, 1, 1);
+    border: 5px solid rgb(11, 1, 1) ;
+}
+
+.full-width {
+    flex-basis: 100%;
+    align-self: center;
+    padding: 25px 10px;
+    font-size: 40px;
+    color: white;
+}
+
+.double {
+    flex-basis: 50%;
+}
+
+.triple {
+    flex-basis: 75%;
+}
+
+button {
+    flex-basis: 25%;
+    border: 6px solid rgb(0, 0, 0) ;
+    font-size: 28px;
+    font-weight: 800;
+    background-color: rgb(115, 194, 166);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(198, 202, 198);
+}
