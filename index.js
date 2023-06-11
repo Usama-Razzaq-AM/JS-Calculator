@@ -65,13 +65,13 @@ function backspace() {
 
 function flushOperation(intScreen) {
     if (previuosOperator==='+') {
-        runningTotal+=screen;
+        runningTotal+=intScreen;
     } else if (previuosOperator==='-') {
-        runningTotal-=screen;
+        runningTotal-=intScreen;
     } else if (previuosOperator==='×') {
-        runningTotal*=screen;
+        runningTotal*=intScreen;
     } else if (previuosOperator==='÷') {
-        runningTotal/=screen;
+        runningTotal/=intScreen;
     }
 }
 
@@ -80,7 +80,8 @@ function handleMath(value) {
         //do nothing
         return;
     }
-    const intScreen=parseInt(screen);
+    let intScreen=parseInt(screen);
+    console.log(intScreen);
     if (runningTotal===0) {
         runningTotal=intScreen;
     } else {
